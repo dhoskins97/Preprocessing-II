@@ -1,1 +1,45 @@
 // Navigation Styles here
+
+.containernav {
+    width: 100%;
+    border-bottom: dashed 2px @silver;
+
+    .aligningcontainer {
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        .displayflex (row, space-between, center);
+        padding: 23px 0;
+        
+        nav {
+
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 150%;
+                padding: 0 18px;
+                &:hover {text-decoration: underline;}
+            }
+        }
+    }
+
+@media @mobile {
+    .aligningcontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0;
+
+        h1 {
+            font-size: 225%;
+            padding: 10px 0;
+        }
+
+        nav {
+            font-size: 80%;
+            padding-bottom: 10px;
+        }
+    }
+}
+}
