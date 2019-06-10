@@ -1,1 +1,17 @@
 // Mixins in here
+.displayflex (@direction, @justify-content, @align-items){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify-content;
+    align-items: @align-items;
+}
+
+.buttonmixin (@a, @b, @c, @d, @e, @f, @g) {
+    width: @a;
+    font-size: @b;
+    text-align: @c;
+    background-color: @d;
+    color: @e;
+    padding: @f;
+    border-radius: @g;
+    }
